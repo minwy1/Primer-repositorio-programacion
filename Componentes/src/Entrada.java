@@ -20,16 +20,26 @@ public class Entrada {
     public static void main(String[] args){
 
         // variables:
-        //segun el dato que guara: string, char, byte/shot/int/long, double/float, boolean
+        // segun el dato que guara: string, char, byte/shot/int/long, double/float, boolean
+        // segun la forma de construirse:primitivos (solo guarda el valor)/ complejo (ademas del valor y de la funcionalidad)
+        // segun la mutabilidad del dato: mutables / no mutables (constante)
+        // segun el scope de la variable: metodo (bloque) / clase
 
         //tipo nombre=valor
         String nombreLegal = "Alvaro";
         nombreLegal = "Alvaro2"; //Esto sobreescribe el valor dado previamente a la variable
+        //La forma correcta para un complejo seria: String nombreLegal= new String (original: "Alvaro");
+        //Se cambian de primitiva a compleja cambiando la letra mayuscula de la variable
         char letra = 'a';
         int edad = 27;
         double altura = 1.76;
         float alturaFloat = 1.76f;
         boolean acierto = true;
+        Character letraCompleja = 'a';
+        Integer numeroComplejo = 2;
+        Boolean aciertoComplejo = true;
+        Double alturaComplejo = 1.87;
+        final String DNI = "123A"; //las variables constantes se escriben en mayusculas por buena practica
 
     //ordenes a ejecutar
         System.out.println("Hola mundo");
